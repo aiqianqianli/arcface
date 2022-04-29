@@ -6,7 +6,7 @@
 .DS_Store
 *.swp
 profile
-
+Frameworks/
 DerivedData/
 build/
 GeneratedPluginRegistrant.h
