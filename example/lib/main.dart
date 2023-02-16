@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     initPlatformState();
-    initArcSoft();
+    // initArcSoft();
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -52,8 +52,8 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initArcSoft() async {
     bool result = await Arcsoft.instance.init(
-        '6WceGJ4bCY1zPd8TrZtLjv5yQra32Q5kVV45PeqD7nu6',
-        'ARZ4EPno6HeV7fxHeU5mEWBTgrm4t8ArKMYasBBraRHW');
+        '7vNo7jPkJ7SmGpnk6vgVjtXWoYNfxnntqdNPoPzJoZ26',
+        '5k63P82aUyrp49X9JeAmYtnrjkKLvpi8K3qFv3tTfxc1');
     print(result);
   }
 
@@ -83,7 +83,8 @@ class _MyAppState extends State<MyApp> {
           child: InkWell(
               child: Text('Running on: $_platformVersion\n'),
               onTap: () {
-                this.arcSoftCompareFace();
+                initArcSoft();
+                // this.arcSoftCompareFace();
               }),
         ),
       ),

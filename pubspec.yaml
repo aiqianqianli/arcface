@@ -1,6 +1,6 @@
 name: arcsoft
 description: A Flutter plugin for using Face
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/aiqianqianli
 repository: https://github.com/aiqianqianli/arcface
 issue_tracker: https://github.com/aiqianqianli/arcface/issues
